@@ -1,2 +1,24 @@
-# blog
-My Blog
+# Blog
+-  思考
+    -  [为什么要做内容输出](https://github.com/jacksonwuu/blog/blob/main/1-Thinking/为什么要做内容输出.md)
+    -  [十条做产品的经验](https://github.com/jacksonwuu/blog/blob/main/1-Thinking/十条做产品的经验.md)
+    -  [我的写作方法论](https://github.com/jacksonwuu/blog/blob/main/1-Thinking/我的写作方法论.md)
+    -  [推荐书单](https://github.com/jacksonwuu/blog/blob/main/1-Thinking/推荐书单.md)
+    -  [避免被误导](https://github.com/jacksonwuu/blog/blob/main/1-Thinking/避免被误导.md)
+    -  [针对迷茫的一些建议](https://github.com/jacksonwuu/blog/blob/main/1-Thinking/针对迷茫的一些建议.md)
+-  编程
+    -  [各种公司的科技博客](https://github.com/jacksonwuu/blog/blob/main/2-Programming/各种公司的科技博客.md)
+-  翻译
+    -  [少消费，多创造，这样更快乐](https://github.com/jacksonwuu/blog/blob/main/3-Translation/少消费，多创造，这样更快乐.md)
+    -  [简短地写作](https://github.com/jacksonwuu/blog/blob/main/3-Translation/简短地写作.md)
+-  科技
+    -  [一个左右互搏的例子](https://github.com/jacksonwuu/blog/blob/main/4-Tech/一个左右互搏的例子.md)
+    -  [一只特立独行的鸭](https://github.com/jacksonwuu/blog/blob/main/4-Tech/一只特立独行的鸭.md)
+    -  [开源项目的赚钱之道](https://github.com/jacksonwuu/blog/blob/main/4-Tech/开源项目的赚钱之道.md)
+    -  [推荐创业者关注的几个媒体](https://github.com/jacksonwuu/blog/blob/main/4-Tech/推荐创业者关注的几个媒体.md)
+-  工具
+    -  [Enhancer-for-YouTube](https://github.com/jacksonwuu/blog/blob/main/5-Tool/Enhancer-for-YouTube.md)
+    -  [OneTab](https://github.com/jacksonwuu/blog/blob/main/5-Tool/OneTab.md)
+-  关注我
+    -  [Github](https://github.com/jacksonwuu)
+    -  [硬核小卒（Telegram 频道）](https://t.me/yinghexiaozu)
