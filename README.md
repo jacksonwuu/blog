@@ -7,7 +7,8 @@
     -  [避免被误导](https://github.com/jacksonwuu/blog/blob/main/1-Thinking/避免被误导.md)
     -  [针对迷茫的一些建议](https://github.com/jacksonwuu/blog/blob/main/1-Thinking/针对迷茫的一些建议.md)
 -  编程
-    -  [各种公司的科技博客](https://github.com/jacksonwuu/blog/blob/main/2-Programming/各种公司的科技博客.md)
+    -  [各大公司的科技博客](https://github.com/jacksonwuu/blog/blob/main/2-Programming/各大公司的科技博客.md)
+    -  [软件架构模式](https://github.com/jacksonwuu/blog/blob/main/2-Programming/软件架构模式.md)
 -  翻译
     -  [少消费，多创造，这样更快乐](https://github.com/jacksonwuu/blog/blob/main/3-Translation/少消费，多创造，这样更快乐.md)
     -  [简短地写作](https://github.com/jacksonwuu/blog/blob/main/3-Translation/简短地写作.md)
