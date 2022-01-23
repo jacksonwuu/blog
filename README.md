@@ -1,13 +1,17 @@
 # Blog
 -  思考
     -  [为什么要做内容输出](https://github.com/jacksonwuu/blog/blob/main/1-Thinking/为什么要做内容输出.md)
+    -  [做事前先问问自己几个问题](https://github.com/jacksonwuu/blog/blob/main/1-Thinking/做事前先问问自己几个问题.md)
     -  [十条做产品的经验](https://github.com/jacksonwuu/blog/blob/main/1-Thinking/十条做产品的经验.md)
+    -  [博客推荐](https://github.com/jacksonwuu/blog/blob/main/1-Thinking/博客推荐.md)
+    -  [如何避免被误导](https://github.com/jacksonwuu/blog/blob/main/1-Thinking/如何避免被误导.md)
     -  [我的写作方法论](https://github.com/jacksonwuu/blog/blob/main/1-Thinking/我的写作方法论.md)
     -  [推荐书单](https://github.com/jacksonwuu/blog/blob/main/1-Thinking/推荐书单.md)
-    -  [避免被误导](https://github.com/jacksonwuu/blog/blob/main/1-Thinking/避免被误导.md)
+    -  [观点集](https://github.com/jacksonwuu/blog/blob/main/1-Thinking/观点集.md)
     -  [针对迷茫的一些建议](https://github.com/jacksonwuu/blog/blob/main/1-Thinking/针对迷茫的一些建议.md)
 -  编程
     -  [各大公司的科技博客](https://github.com/jacksonwuu/blog/blob/main/2-Programming/各大公司的科技博客.md)
+    -  [版本号的解读](https://github.com/jacksonwuu/blog/blob/main/2-Programming/版本号的解读.md)
     -  [软件架构模式](https://github.com/jacksonwuu/blog/blob/main/2-Programming/软件架构模式.md)
 -  翻译
     -  [少消费，多创造，这样更快乐](https://github.com/jacksonwuu/blog/blob/main/3-Translation/少消费，多创造，这样更快乐.md)
@@ -20,6 +24,8 @@
 -  工具
     -  [Enhancer-for-YouTube](https://github.com/jacksonwuu/blog/blob/main/5-Tool/Enhancer-for-YouTube.md)
     -  [OneTab](https://github.com/jacksonwuu/blog/blob/main/5-Tool/OneTab.md)
+    -  [iOS和Windows互传文件](https://github.com/jacksonwuu/blog/blob/main/5-Tool/iOS和Windows互传文件.md)
+    -  [uBlacklist](https://github.com/jacksonwuu/blog/blob/main/5-Tool/uBlacklist.md)
 -  关注我
     -  [Github](https://github.com/jacksonwuu)
     -  [硬核小卒（Telegram 频道）](https://t.me/yinghexiaozu)
