@@ -1,5 +1,6 @@
 # Blog
 -  思考
+    -  [一些好建议](https://github.com/jacksonwuu/blog/blob/main/1-Thinking/一些好建议.md)
     -  [为什么要做内容输出](https://github.com/jacksonwuu/blog/blob/main/1-Thinking/为什么要做内容输出.md)
     -  [做事前先问问自己几个问题](https://github.com/jacksonwuu/blog/blob/main/1-Thinking/做事前先问问自己几个问题.md)
     -  [十条做产品的经验](https://github.com/jacksonwuu/blog/blob/main/1-Thinking/十条做产品的经验.md)
@@ -17,10 +18,10 @@
     -  [少消费，多创造，这样更快乐](https://github.com/jacksonwuu/blog/blob/main/3-Translation/少消费，多创造，这样更快乐.md)
     -  [简短地写作](https://github.com/jacksonwuu/blog/blob/main/3-Translation/简短地写作.md)
 -  科技
-    -  [一个左右互搏的例子](https://github.com/jacksonwuu/blog/blob/main/4-Tech/一个左右互搏的例子.md)
-    -  [一只特立独行的鸭](https://github.com/jacksonwuu/blog/blob/main/4-Tech/一只特立独行的鸭.md)
-    -  [开源项目的赚钱之道](https://github.com/jacksonwuu/blog/blob/main/4-Tech/开源项目的赚钱之道.md)
-    -  [推荐创业者关注的几个媒体](https://github.com/jacksonwuu/blog/blob/main/4-Tech/推荐创业者关注的几个媒体.md)
+    -  [一个左右互搏的例子](https://github.com/jacksonwuu/blog/blob/main/4-Technology/一个左右互搏的例子.md)
+    -  [一只特立独行的鸭](https://github.com/jacksonwuu/blog/blob/main/4-Technology/一只特立独行的鸭.md)
+    -  [开源项目的赚钱之道](https://github.com/jacksonwuu/blog/blob/main/4-Technology/开源项目的赚钱之道.md)
+    -  [推荐创业者关注的几个媒体](https://github.com/jacksonwuu/blog/blob/main/4-Technology/推荐创业者关注的几个媒体.md)
 -  工具
     -  [Enhancer-for-YouTube](https://github.com/jacksonwuu/blog/blob/main/5-Tool/Enhancer-for-YouTube.md)
     -  [OneTab](https://github.com/jacksonwuu/blog/blob/main/5-Tool/OneTab.md)
