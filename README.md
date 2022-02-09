@@ -14,6 +14,7 @@
     -  [软件架构模式](https://github.com/jacksonwuu/blog/blob/main/2-Programming/软件架构模式.md)
     -  [版本号的解读](https://github.com/jacksonwuu/blog/blob/main/2-Programming/版本号的解读.md)
     -  [各大公司的科技博客](https://github.com/jacksonwuu/blog/blob/main/2-Programming/各大公司的科技博客.md)
+    -  [《Unix 编程艺术》读书笔记](https://github.com/jacksonwuu/blog/blob/main/2-Programming/《Unix 编程艺术》读书笔记.md)
 -  翻译
     -  [简短地写作](https://github.com/jacksonwuu/blog/blob/main/3-Translation/简短地写作.md)
     -  [少消费，多创造，这样更快乐](https://github.com/jacksonwuu/blog/blob/main/3-Translation/少消费，多创造，这样更快乐.md)
