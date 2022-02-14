@@ -18,6 +18,7 @@
 -  翻译
     -  [简短地写作](https://github.com/jacksonwuu/blog/blob/main/3-Translation/%E7%AE%80%E7%9F%AD%E5%9C%B0%E5%86%99%E4%BD%9C.md)
     -  [少消费，多创造，这样更快乐](https://github.com/jacksonwuu/blog/blob/main/3-Translation/%E5%B0%91%E6%B6%88%E8%B4%B9%EF%BC%8C%E5%A4%9A%E5%88%9B%E9%80%A0%EF%BC%8C%E8%BF%99%E6%A0%B7%E6%9B%B4%E5%BF%AB%E4%B9%90.md)
+    -  [This is the Telegram Way](https://github.com/jacksonwuu/blog/blob/main/3-Translation/This%20is%20the%20Telegram%20Way.md)
 -  科技
     -  [一只特立独行的鸭](https://github.com/jacksonwuu/blog/blob/main/4-Technology/%E4%B8%80%E5%8F%AA%E7%89%B9%E7%AB%8B%E7%8B%AC%E8%A1%8C%E7%9A%84%E9%B8%AD.md)
     -  [一个左右互搏的例子](https://github.com/jacksonwuu/blog/blob/main/4-Technology/%E4%B8%80%E4%B8%AA%E5%B7%A6%E5%8F%B3%E4%BA%92%E6%90%8F%E7%9A%84%E4%BE%8B%E5%AD%90.md)
