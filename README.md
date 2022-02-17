@@ -7,6 +7,7 @@
     -  [我的写作方法论](https://github.com/jacksonwuu/blog/blob/main/1-Thinking/%E6%88%91%E7%9A%84%E5%86%99%E4%BD%9C%E6%96%B9%E6%B3%95%E8%AE%BA.md)
     -  [如何避免被误导](https://github.com/jacksonwuu/blog/blob/main/1-Thinking/%E5%A6%82%E4%BD%95%E9%81%BF%E5%85%8D%E8%A2%AB%E8%AF%AF%E5%AF%BC.md)
     -  [十条做产品的经验](https://github.com/jacksonwuu/blog/blob/main/1-Thinking/%E5%8D%81%E6%9D%A1%E5%81%9A%E4%BA%A7%E5%93%81%E7%9A%84%E7%BB%8F%E9%AA%8C.md)
+    -  [斯坦福创业课笔记](https://github.com/jacksonwuu/blog/blob/main/1-Thinking/%E6%96%AF%E5%9D%A6%E7%A6%8F%E5%88%9B%E4%B8%9A%E8%AF%BE%E7%AC%94%E8%AE%B0.md)
     -  [针对迷茫的一些建议](https://github.com/jacksonwuu/blog/blob/main/1-Thinking/%E9%92%88%E5%AF%B9%E8%BF%B7%E8%8C%AB%E7%9A%84%E4%B8%80%E4%BA%9B%E5%BB%BA%E8%AE%AE.md)
     -  [为什么要做内容输出](https://github.com/jacksonwuu/blog/blob/main/1-Thinking/%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E5%81%9A%E5%86%85%E5%AE%B9%E8%BE%93%E5%87%BA.md)
     -  [做事前先问问自己几个问题](https://github.com/jacksonwuu/blog/blob/main/1-Thinking/%E5%81%9A%E4%BA%8B%E5%89%8D%E5%85%88%E9%97%AE%E9%97%AE%E8%87%AA%E5%B7%B1%E5%87%A0%E4%B8%AA%E9%97%AE%E9%A2%98.md)
