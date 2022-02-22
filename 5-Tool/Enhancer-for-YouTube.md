@@ -2,25 +2,25 @@
 
 就我个人而言，YouTube 官方的功能并没有那么好用，所以我找到了这款浏览器插件，它大大提升了我使用 YouTube 的体验，它也可以算是我用过最好的 YouTube 插件。
 
-![](Enhancer-for-YouTube/1.png)
+![](https://i.imgur.com/2CNktXm.png)
 
-![](Enhancer-for-YouTube/2.png)
+![](https://i.imgur.com/5Kwc59c.png)
 
 没错就是这款插件，它获得了火狐官方的推荐（Chrome 浏览器上也可以安装），并且受到了广大群众的好评，达到了惊人的 4.7 星评分。
 
 #### 工具栏
 
-![](Enhancer-for-YouTube/3.png)
+![](https://i.imgur.com/fjfFglt.png)
 
 启用插件后，功能栏就会出现在 YouTube 视频的下方，这是一个可以定制的功能栏，点击小齿轮即可进入设置页面。
 
 这是工具栏的设置，有十来个按钮可以选择，包括屏蔽广告、剧场模式、播放速度、显示宽度等功能。
 
-![](Enhancer-for-YouTube/4.png)
+![](https://i.imgur.com/eDVBVaS.png)
 
 #### 快捷键
 
-![](Enhancer-for-YouTube/5.png)
+![](https://i.imgur.com/1gLwOLw.png)
 
 快捷键是这个插件最棒的地方，它让我对视频充满了掌控感。
 
@@ -32,19 +32,19 @@ https://www.mrfdev.com/youtube-keyboard-shortcuts
 
 #### 广告屏蔽
 
-![](Enhancer-for-YouTube/6.png)
+![](https://i.imgur.com/asjgHOQ.png)
 
 广告屏蔽或许是大部分人使用这个插件的原因，但是我不建议你这样做，请为你喜欢的频道看广告，这样他们才能获得经济回报，才能有动力做更多视频。
 
 #### 自动切换清晰度
 
-![](Enhancer-for-YouTube/7.png)
+![](https://i.imgur.com/HjzkAed.png)
 
 这个功能对我来说太重要了，当我网络不好的时候，插件会为我自动切换到低清晰度，让观影一直保持顺畅，不然断断续续地卡在高清视频中，心态很容易爆炸。
 
 #### 小窗口
 
-![](Enhancer-for-YouTube/8.png)
+![](https://i.imgur.com/j3WoZbP.png)
 
 很贴心的设计，让我可以一边看评论，一边看视频，大大提高了我的参与感。
 
@@ -58,9 +58,9 @@ YouTube 的评论不是按照时间顺序来排列的，这就会导致一些不
 
 #### 主题
 
-![](Enhancer-for-YouTube/9.png)
+![](https://i.imgur.com/tRZ7Ou6.png)
 
-![](Enhancer-for-YouTube/10.png)
+![](https://i.imgur.com/Z8xmO2I.png)
 
 是的，整个 YouTube 界面是可以换主题色的，如果你不喜欢默认的红白搭配，那就用这个功能给它换个皮肤。
 

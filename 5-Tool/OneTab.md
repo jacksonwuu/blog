@@ -1,6 +1,6 @@
 ## 一键节省 95% 的浏览器内存：OneTab
 
-![](OneTab/1.png)
+![](https://i.imgur.com/j12Fil2.png)
 
 对于我来说，每天要浏览上百个网页，每打开一个网页，浏览器就会多一个标签页，并且我又不舍得关掉，因为总怕有什么重要的东西在里面。
 
@@ -12,9 +12,9 @@
 
 这个插件的名字叫做 OneTab。
 
-![](OneTab/2.png)
+![](https://i.imgur.com/DIcMIyD.png)
 
-![](OneTab/3.png)
+![](https://i.imgur.com/DIcMIyD.png)
 
 这是火狐官方推荐的插件，拥有不错的 4.2 星的评分。Chrome，Safari 上也可以安装这个插件。
 
@@ -28,11 +28,11 @@ OneTab 是一款很简洁的插件，最显著的功能就是一键收纳浏览�
 
 下面做一个简单的展示。
 
-![](OneTab/4.png)
+![](https://i.imgur.com/fWVsYho.png)
 
-![](OneTab/5.png)
+![](https://i.imgur.com/XL3Db9f.png)
 
-![](OneTab/6.png)
+![](https://i.imgur.com/UIUABWU.png)
 
 #### 恢复/删除标签
 
@@ -42,7 +42,7 @@ OneTab 是一款很简洁的插件，最显著的功能就是一键收纳浏览�
 
 删除也是同理。
 
-![](OneTab/7.png)
+![](https://i.imgur.com/UIUABWU.png)
 
 #### 标签排序
 
@@ -50,7 +50,7 @@ OneTab 是一款很简洁的插件，最显著的功能就是一键收纳浏览�
 
 同一类的标签收到同一组，这样也是对零散的信息进行汇总，有助于系统性地学习。
 
-![](OneTab/8.png)
+![](https://i.imgur.com/WAYGzSr.png)
 
 #### 命名标签组
 
@@ -60,7 +60,7 @@ OneTab 是一款很简洁的插件，最显著的功能就是一键收纳浏览�
 
 命名有个好处是方便以后查看，也方便进一步收纳。
 
-![](OneTab/9.png)
+![](https://i.imgur.com/rigzAun.png)
 
 #### 锁定标签组
 
@@ -68,7 +68,7 @@ OneTab 是一款很简洁的插件，最显著的功能就是一键收纳浏览�
 
 这样方便查看固定的一组网页，比如下面这个例子，我每天只需要点击恢复全部，就可以查看我的所有社交媒体，同时插件还会继续保留这一组标签。
 
-![](OneTab/10.png)
+![](https://i.imgur.com/WFqGBKO.png)
 
 总而言之，这是一款小巧精致、高效简洁的浏览器插件，值得一用。
 
