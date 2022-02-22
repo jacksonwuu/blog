@@ -1,5 +1,8 @@
-标题：This is the Telegram way
-原文：https://t.me/durov/142
+> 标题：This is the Telegram way
+> 
+> 作者：Pavel Durov
+> 
+> 原文：https://t.me/durov/142
 
 随着 Telegram 活跃用户数接近 5 亿，很多人都在问一个问题：谁来花钱维持这种增长？毕竟，更多的用户意味着更多的带宽和服务器开支。像我们这样规模的项目，每年至少需要几亿美元才能维持下去。
 

@@ -19,7 +19,7 @@
     -  [《Unix 编程艺术》读书笔记](https://github.com/jacksonwuu/blog/blob/main/2-Programming/%E3%80%8AUnix%20%E7%BC%96%E7%A8%8B%E8%89%BA%E6%9C%AF%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0.md)
 -  翻译
     -  [简短地写作](https://github.com/jacksonwuu/blog/blob/main/3-Translation/%E7%AE%80%E7%9F%AD%E5%9C%B0%E5%86%99%E4%BD%9C.md)
-    -  [少消费，多创造，这样更快乐](https://github.com/jacksonwuu/blog/blob/main/3-Translation/%E5%B0%91%E6%B6%88%E8%B4%B9%EF%BC%8C%E5%A4%9A%E5%88%9B%E9%80%A0%EF%BC%8C%E8%BF%99%E6%A0%B7%E6%9B%B4%E5%BF%AB%E4%B9%90.md)
+    -  [少消费多创造才快乐](https://github.com/jacksonwuu/blog/blob/main/3-Translation/%E5%B0%91%E6%B6%88%E8%B4%B9%E5%A4%9A%E5%88%9B%E9%80%A0%E6%89%8D%E5%BF%AB%E4%B9%90.md)
     -  [This is the Telegram Way](https://github.com/jacksonwuu/blog/blob/main/3-Translation/This%20is%20the%20Telegram%20Way.md)
 -  科技
     -  [](https://github.com/jacksonwuu/blog/blob/main/4-Technology/.DS_Store)
@@ -28,6 +28,7 @@
     -  [开源项目的赚钱之道](https://github.com/jacksonwuu/blog/blob/main/4-Technology/%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE%E7%9A%84%E8%B5%9A%E9%92%B1%E4%B9%8B%E9%81%93.md)
     -  [推荐创业者关注的几个媒体](https://github.com/jacksonwuu/blog/blob/main/4-Technology/%E6%8E%A8%E8%8D%90%E5%88%9B%E4%B8%9A%E8%80%85%E5%85%B3%E6%B3%A8%E7%9A%84%E5%87%A0%E4%B8%AA%E5%AA%92%E4%BD%93.md)
 -  工具
+    -  [](https://github.com/jacksonwuu/blog/blob/main/5-Tool/.DS_Store)
     -  [OneTab](https://github.com/jacksonwuu/blog/blob/main/5-Tool/OneTab.md)
     -  [uBlacklist](https://github.com/jacksonwuu/blog/blob/main/5-Tool/uBlacklist.md)
     -  [iOS和Windows互传文件](https://github.com/jacksonwuu/blog/blob/main/5-Tool/iOS%E5%92%8CWindows%E4%BA%92%E4%BC%A0%E6%96%87%E4%BB%B6.md)
