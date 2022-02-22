@@ -27,29 +27,3 @@
 这就是 Telegram 的发展路线。
 
 这可以让我们在未来几十年内不断创新，不断发展。我们将能够推出无数新功能，迎接成亿的新用户的到来。于此同时，我们保持独立并忠于我们的价值观，以及，重新定义科技公司的运营方式。
-
-原文：
-
-As Telegram approaches 500 million active users, many of you are asking the question – who is going to pay to support this growth? After all, more users mean more expenses for traffic and servers. A project of our size needs at least a few hundred million dollars per year to keep going. 
-
-For most of Telegram’s history, I paid for the expenses of the company from my personal savings. However, with its current growth Telegram is on track to reach billions of users and to require appropriate funding. When a tech project reaches this scale, typically there are two options – start earning money to cover the costs, or sell the company. 
-
-Hence the question – which path will Telegram take? I’d like to make a few points to clarify our plan:
-
-1. We are not going to sell the company like the founders of Whatsapp. The world needs Telegram to stay independent as a place where users are respected and high-quality service is ensured. Telegram must continue to serve the world as an example of a tech company that strives for perfection and integrity. And, as the sad examples of our predecessors show, that is impossible if you become part of a corporation.
-
-2. Telegram is here to stay for a long time. We began developing our apps for our personal use over 8 years ago and have come a long way since then. In the process, Telegram changed the way people communicate in several aspects – encryption, functionality, simplicity, design, speed. This journey has just started. There’s much more we can – and will – bring to the world. 
-
-3. In order to make points 1 and 2 possible, Telegram will begin to generate revenue, starting next year. We will do it in accordance with our values and the pledges we have made over the last 7 years. Thanks to our current scale, we will be able to do it in a non-intrusive way. Most users will hardly notice any change.
-
-4. All the features that are currently free will stay free. We will add some new features for business teams or power users. Some of these features will require more resources and will be paid for by these premium users. Regular users will be able to keep enjoying Telegram – for free, forever. 
-
-5. All parts of Telegram devoted to messaging will remain ad-free. We think that displaying ads in private 1-to-1 chats or group chats is a bad idea. Communication between people should be free of advertising of any sort. 
-
-6. In addition to its messaging component, Telegram has a social networking dimension. Our massive public one-to-many channels can have millions of subscribers each and are more like Twitter feeds. In many markets the owners of such channels display ads to earn money, sometimes using third-party ad platforms. The ads they post look like regular messages, and are often intrusive. We will fix this by introducing our own Ad Platform for public one-to-many channels – one that is user-friendly, respects privacy and allows us to cover the costs of servers and traffic.
-
-7. If Telegram starts earning money, the community should also benefit. For example, If we monetize large public one-to-many channels via the Ad Platform, the owners of these channels will receive free traffic in proportion to their size. Or, if Telegram introduces premium stickers with additional expressive features, the artists who make stickers of this new type will also get a part of the profit. We want millions of Telegram-based creators and small businesses to thrive, enriching the experience of all our users.
-
-This is the Telegram way.
-
-It will allow us to keep innovating and keep growing for decades to come. We will be able to launch countless new features and welcome billions of new users. While doing that, we will remain independent and stay true to our values, redefining how a tech company should operate.
