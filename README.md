@@ -4,6 +4,7 @@
     -  [推荐书单](https://github.com/jacksonwuu/blog/blob/main/1-Thinking/%E6%8E%A8%E8%8D%90%E4%B9%A6%E5%8D%95.md)
     -  [博客推荐](https://github.com/jacksonwuu/blog/blob/main/1-Thinking/%E5%8D%9A%E5%AE%A2%E6%8E%A8%E8%8D%90.md)
     -  [一些好建议](https://github.com/jacksonwuu/blog/blob/main/1-Thinking/%E4%B8%80%E4%BA%9B%E5%A5%BD%E5%BB%BA%E8%AE%AE.md)
+    -  [如何学好英语？](https://github.com/jacksonwuu/blog/blob/main/1-Thinking/%E5%A6%82%E4%BD%95%E5%AD%A6%E5%A5%BD%E8%8B%B1%E8%AF%AD%EF%BC%9F.md)
     -  [我的写作方法论](https://github.com/jacksonwuu/blog/blob/main/1-Thinking/%E6%88%91%E7%9A%84%E5%86%99%E4%BD%9C%E6%96%B9%E6%B3%95%E8%AE%BA.md)
     -  [如何避免被误导](https://github.com/jacksonwuu/blog/blob/main/1-Thinking/%E5%A6%82%E4%BD%95%E9%81%BF%E5%85%8D%E8%A2%AB%E8%AF%AF%E5%AF%BC.md)
     -  [十条做产品的经验](https://github.com/jacksonwuu/blog/blob/main/1-Thinking/%E5%8D%81%E6%9D%A1%E5%81%9A%E4%BA%A7%E5%93%81%E7%9A%84%E7%BB%8F%E9%AA%8C.md)
