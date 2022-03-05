@@ -1,6 +1,6 @@
 site_name: 硬核小卒
-repo_name: jacksonwuu/mkdocs_blog
-repo_url: https://github.com/jacksonwuu/mkdocs_blog
+repo_name: jacksonwuu/blog
+repo_url: https://github.com/jacksonwuu/blog
 site_description: 科技青年的一方天地
 
 theme:
