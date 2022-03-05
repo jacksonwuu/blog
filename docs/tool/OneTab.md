@@ -1,4 +1,4 @@
-## 一键节省 95% 的浏览器内存：OneTab
+# 一键节省 95% 的浏览器内存：OneTab
 
 ![](https://i.imgur.com/j12Fil2.png)
 

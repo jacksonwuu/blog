@@ -1,4 +1,4 @@
-## 一个插件让你的 YouTube 起飞：Enhancer for YouTube
+# 一个插件让你的 YouTube 起飞：Enhancer for YouTube
 
 就我个人而言，YouTube 官方的功能并没有那么好用，所以我找到了这款浏览器插件，它大大提升了我使用 YouTube 的体验，它也可以算是我用过最好的 YouTube 插件。
 

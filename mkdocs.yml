@@ -1,0 +1,84 @@
+site_name: 硬核小卒
+repo_name: jacksonwuu/mkdocs_blog
+repo_url: https://github.com/jacksonwuu/mkdocs_blog
+site_description: 科技青年的一方天地
+
+theme:
+    name: material
+    features:
+        - header.autohide
+        - navigation.tabs
+        - navigation.instant
+    palette:
+        - media: "(prefers-color-scheme: light)"
+          scheme: default
+          primary: indigo
+          accent: indigo
+          toggle:
+              icon: material/brightness-4
+              name: Switch to dark mode
+        - media: "(prefers-color-scheme: dark)"
+          scheme: slate
+          primary: grey
+          accent: white
+          toggle:
+              icon: material/brightness-7
+              name: Switch to light mode
+    logo: assets/favicon.jpeg
+    favicon: assets/favicon.jpeg
+    icon:
+        repo: fontawesome/brands/github
+
+plugins:
+  - minify:
+      minify_html: true
+  - rss:
+
+extra:
+    social:
+        - icon: fontawesome/brands/twitter
+          link: https://twitter.com/jacksonwuuu
+          name: Jackson's twitter
+        - icon: fontawesome/brands/github
+          link: https://github.com/jacksonwuu
+          name: Jackson's github
+        - icon: fontawesome/brands/telegram
+          link: https://t.me/yinghexiaozu
+
+copyright: Copyright &copy; 2018 - 2022 Jackson Wu
+
+nav:
+    - 思考:
+        - 观点集: thinking/观点集.md
+        - 推荐书单: thinking/推荐书单.md
+        - 博客推荐: thinking/博客推荐.md
+        - 一些好建议: thinking/一些好建议.md
+        - 如何学好英语？: thinking/如何学好英语？.md
+        - 我的写作方法论: thinking/我的写作方法论.md
+        - 如何避免被误导？: thinking/如何避免被误导？.md
+        - 十条做产品的经验: thinking/十条做产品的经验.md
+        - 斯坦福创业课笔记: thinking/斯坦福创业课笔记.md
+        - 针对迷茫的建议: thinking/针对迷茫的建议.md
+        - 为什么要做内容输出？: thinking/为什么要做内容输出？.md
+        - 做事前先问问自己几个问题: thinking/做事前先问问自己几个问题.md
+    - 编程:
+        -   软件架构模式: programming/软件架构模式.md
+        -   版本号的解读: programming/版本号的解读.md
+        -   各大公司的科技博客: programming/各大公司的科技博客.md
+        -   《Unix 编程艺术》读书笔记: programming/《Unix 编程艺术》读书笔记.md
+
+    - 科技:
+          - 一只特立独行的鸭: technology/一只特立独行的鸭.md
+          - 一个左右互搏的例子: technology/一个左右互搏的例子.md
+          - 开源项目的赚钱之道: technology/开源项目的赚钱之道.md
+          - 推荐创业者关注的几个媒体: technology/推荐创业者关注的几个媒体.md
+    - 翻译:
+          - 简短地写作: translation/简短地写作.md
+          - 少消费多创造才快乐: translation/少消费多创造才快乐.md
+          - This is the Telegram Way: translation/This-is-the-Telegram-Way.md
+    - 工具:
+          - OneTab: tool/OneTab.md
+          - uBlacklist: tool/uBlacklist.md
+          - Enhancer for YouTube: tool/Enhancer-for-YouTube.md
+          - iOS 和 Windows 互传文件: tool/iOS和Windows互传文件.md
+    - 关于我: about.md
