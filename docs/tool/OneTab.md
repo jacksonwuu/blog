@@ -14,8 +14,6 @@
 
 ![](https://i.imgur.com/DIcMIyD.png)
 
-![](https://i.imgur.com/DIcMIyD.png)
-
 这是火狐官方推荐的插件，拥有不错的 4.2 星的评分。Chrome，Safari 上也可以安装这个插件。
 
 #### 一键收纳

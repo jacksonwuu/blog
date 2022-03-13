@@ -1,0 +1,45 @@
+# CPU 环、特权和保护
+
+原文标题：CPU Rings, Privilege, and Protection
+原文链接：https://manybutfinite.com/post/cpu-rings-privilege-and-protection/
+原文发布时间：Aug 20th, 2008
+
+您可能在直觉上知道，在 Intel x86 计算机上应用程序的能力是有限的，只有操作系统代码才能执行某些任务，但您知道这是什么原理吗？在这篇文章里，我们来看看 x86 **特权级别**（privilege levels），操作系统和 CPU 会协作来形成保护机制，来限制用户态（user-mode）程序的执行。CPU 有 4 个特权级别，从 0 (最高特权)到 3 (最低特权)，主要有 3 种资源被保护:内存、I/O 端口和执行某些机器指令的能力。在某一时刻，x86 CPU 都在特定的特权级别上运行，这决定了哪些代码可以做什么，哪些不能做什么。这些特权级别通常被描述为保护环，最里面的环对应最高特权。大多数现代 x86 内核只使用两个特权级别，0 和 3:
+
+![x86 Protection Rings](http://static.duartes.org/img/blogPosts/x86rings.png)
+x86 Protection Rings
+
+在众多机器指令中，大约有 15 条指令被 CPU 限制为 ring 0 权限才能执行。其他许多指令也会对其操作数做限制。如果允许用户模式下运行止血指令，可能会破坏保护机制，引发混乱，所以这些指令保留给内核使用。试图在 ring 0 外运行它们会导致通用保护（general-protection）异常，比如一个程序使用无效内存地址时。同样，对内存和 I/O 端口的访问也会基于特权级别进行限制。但在我们了解保护机制之前，让我们先看看 CPU 是如何跟踪当前的特权级别的，这涉及到之前帖子中的[段选择器（segment selectors）](http://duartes.org/gustavo/blog/post/memory-translation-and-segmentation)。它们是这样的:
+
+![Segment Selectors - Data and Code](http://static.duartes.org/img/blogPosts/segmentSelectorDataAndCode.png)
+数据段选择器和代码段选择器
+
+数据段选择器的所有 16 位内容会被代码直接加载到各种段寄存器中，比如 ss(堆栈段寄存器)和 ds(数据段寄存器)。其中包括被 **Requested Privilege Level (RPL)** 字段，我们将稍微处理它的含义。然而，代码段寄存器(cs)是不可思议的。首先，它的内容不能直接由加载指令(如 mov)设置，而只能由改变程序执行流程的指令(如 call)设置。其次，对我们来说很重要的一点是，cs 不是一个可以通过代码设置的 RPL 字段，而是一个由 CPU 自身维护的 **Current Privilege Level（CPL）** 字段。代码段寄存器中的 2 位 CPL 字段**总是等于** CPU 当前的特权级别。英特尔的文档在这个问题上有点摇摆不定，有时在线文件也会混淆这个问题，但事实如此。在任何时候，无论 CPU 中发生了什么，cs 中的 CPL 字段都会告诉你当前运行代码的特权级别。
+
+**请记住，CPU 特权级别与操作系统用户无关。** 无论您是 root 用户、管理员、游客还是普通用户，都没有关系。**所有的用户代码在 ring 3 特权级别下运行，所有的内核代码都在 ring 0 特权级别中运行**，无论代码代表哪个操作系统用户使用。有时，某些内核任务可以被推到用户态下运行，例如 Windows Vista 中用户态设备驱动程序，但这些只是为内核执行任务的特殊进程，通常可以在没有重大后果的情况下被终止。
+
+由于对内存和 I/O 端口的访问限制，在不调用内核的情况下，用户态程序几乎不能与外界做任何交互。它无法打开文件、发送网络数据包、打印到屏幕上或分配内存。用户进程运行在由零环之神（the gods of ring zero）设置的非常有限制的沙盒中。这就是为什么通过设计，可以保证一个进程不可能泄漏其使用之外的内存，或者在它退出后留下打开的文件。所有控制这些东西的数据结构——内存、打开的文件等，都不能被用户代码直接触及;一旦进程完成，沙盒就会被操作系统内核清除。这就是为什么我们的服务器可以一直正常运行 600 天——只要硬件和内核不出问题，里面的东西可以永远运行。这也是 Windows 95 / 98 经常崩溃的原因:这不是因为“M$ sucks”，而是因为为了兼容性的原因，重要的数据结构可以被用户态程序访问。尽管这种做法代价高昂，在当时这可能是一种很好的权衡。
+
+CPU 在两个关键点上保护内存:当一个段选择器被加载时，以及当一个内存页被一个线性地址访问时。因此，当分段和分页都涉及到时，会内存地址转换来做保护。当一个数据段选择器被加载时，会进行以下检查:
+
+![](http://static.duartes.org/img/blogPosts/segmentProtection.png)
+x86 Segment Protection
+
+由于更高的数字意味着更小的特权，因此上面的 MAX()选择 CPL 和 RPL 中特权最低的，并将其与描述符特权级别(DPL)进行比较。如果 DPL 更高或相等，则允许访问。RPL 背后的想法是允许内核代码使用降低的权限来加载一个段。例如，可以使用 RPL 为 3 来确保用户态代码可以访问该段。堆栈段寄存器 ss 例外，对于它，CPL、RPL 和 DPL 三者必须完全匹配。
+
+事实上，段保护几乎不重要，因为现代内核使用一个平坦的地址空间，用户态的段可以达到整个线性地址空间。当一个线性地址转换成一个物理地址时，有用的内存保护是在分页单元中完成的。内存页是一个连续的字节块，由页表项（page table entry）描述，页表项里包含两个与保护相关的字段:一个 supervisor 标志位和一个 read/write 标志位。supervisor 标志位是内核主要是用的 x86 内存保护机制。当 supervisor 标志位为 1 时，该页不能从 ring 3 访问。虽然 read/write 标志位在限制特权方面没有那么重要，但它仍然很有用。当加载一个进程时，存储二进制 image(代码)的页面被标记为只读，因此如果程序试图写入这些页面，就会捕获一些指针错误。在 Unix 中，这个标志也用来实现在 fork 进程时的**写时复制（copy on write）** 机制。在 fork 时，父进程的页面被标记为只读，并与 fork 出的子进程共享。当子进程试图写入这个页面时，CPU 就会触发一个错误，让内核知道此时要复制这个页面，并将其标记为可写入。
+
+最后，我们需要一种方法让 CPU 在特权级别之间切换。如果 ring 3 的代码可以将控制权转移到内核中的任意位置，那么就很容易通过跳转到错误的(对的?)位置来颠覆操作系统。有控制的控制权转移是必要的。这是通过**门描述符（gate descriptors）**和 **sysenter 指令**来实现的。门描述符一种类型的段描述符，它有四种子类型:call-gate 描述符、interrupt-gate 描述符、trap-gate 描述符 以及 task-gate 描述符。call-gate 提供了一个内核入口点，可以与普通的调用和 jmp 指令一起使用，但是它们使用的不多，所以我先忽略它们。task-gate 也不是那么热门(在 Linux 中，它们只用于由内核或硬件问题引起的双重错误)。
+
+这样就剩下了两个:interrupt-gate 和 trap-gate，它们被用来处理硬件中断(例如，键盘，定时器，磁盘)和异常(例如，页面错误，除零)。我将两者都称为"中断"这些门描述符存储在中断描述符表 **Interrupt Descriptor Table (IDT)** 中。每个中断被分配一个 0 到 255 之间的数字，称为**向量**，当处理器在找应该用哪个 gate 描述符来处理中断时，处理器就是通过把这个数字作为索引到 IDT 中找到该 gate 描述符的。interrupt-gate 和 trap-gate 几乎相同。它们的格式如下所示，以及在中断发生时强制执行的特权检查。为了让这个例子更具体，我还放上了一些 Linux 内核里的变量名。
+
+![](http://static.duartes.org/img/blogPosts/interruptDescriptorWithPrivilegeCheck.png)
+Interrupt Descriptor with Privilege Check
+
+gate 里的 DPL 字段和段选择器都被用来控制访问，而且段选择器加上偏移量（offset）一起确定中断处理程序代码的入口点。内核通常在这些 gate 描述符中为内核代码段使用段选择器。一个中断**永远不能**将控制从高特权的环转移到低特权的环。特权要么保持不变(当内核本身被中断时)，要么提高(当用户模式代码被中断时)。在这两种情况下，得到的 CPL 将等于目标代码段的 DPL;如果 CPL 发生切换时，堆栈也会发生切换。如果一个中断是由代码通过诸如`int n`这样的指令触发的，那么需要额外的一次检查: gate DPL 必须与 CPL 具有相同或更低的权限，这可以防止用户的代码随机触发中断。如果这些检查失败——你猜对了——就会发生一个通用保护（general-protection）异常。所有的 Linux 中断处理程序最终都会在 ring 0 中运行。
+
+Linux 内核在初始化时会先在 [setup_idt()](http://lxr.linux.no/linux+v2.6.25.6/arch/x86/kernel/head_32.S#L475)中设置一个 IDT，设置时忽略中断。然后它使用 `include/asm-x86/desc.h` 中的函数来填充 `arch/x86/kernel/traps_32.c` 中的常见的 IDT 条目。在 Linux 中，名称中带有“system”的 gate 描述符可以从用户态中访问，它的 set 函数使用 DPL 为 3。“system gate”是用户态可访问的一种 Intel trap gate。另外，硬件中断门不是在这里设置的，而是在适当的驱动程序中设置的。
+
+用户态可访问三个 gate: 中断向量 3 和 4 分别用于调试和检查数值溢出。然后为 [SYSCALL_VECTOR](http://lxr.linux.no/linux+v2.6.25.6/include/asm-x86/mach-default/irq_vectors.h#L31) 设置一个 system gate，对于 x86 架构来说是 0x80。这是进程将控制转移到内核、进行系统调用的机制。从 Pentium Pro 开始，**sysenter** 指令作为一种更快的系统调用方式而被引入。它依赖于特殊用途的 CPU 寄存器，用于存储内核系统调用处理程序的代码段、入口点和其他细节。当 sysenter 被执行时，CPU 不会进行特权检查，而是立即进入 CPL 0，并将新的值加载到代码寄存器和堆栈寄存器(cs, eip, ss, esp)。只有 ring 0 可以用 sysenter 来设置寄存器，这是在 [enable_sep_cpu()](http://lxr.linux.no/linux+v2.6.25.6/arch/x86/vdso/vdso32-setup.c#L235)中完成的。
+
+最后，当需要返回到 ring 3 时，内核发出 **iret** 或 **sysexit** 指令，分别从中断和系统调用返回，从而退出 ring 0，并恢复 CPL 为 3 的用户代码的执行。Vim 告诉我，我将接近 1900 个单词，所以 I/O 端口保护的事情我隔天再说。我们关于 x86 环和保护的旅程就此结束。感谢你的阅读!
