@@ -45,3 +45,9 @@ Linux 内核在初始化时会先在 [setup_idt()](http://lxr.linux.no/linux+v2.
 用户态可访问三个 gate: 中断向量 3 和 4 分别用于调试和检查数值溢出。然后为 [SYSCALL_VECTOR](http://lxr.linux.no/linux+v2.6.25.6/include/asm-x86/mach-default/irq_vectors.h#L31) 设置一个 system gate，对于 x86 架构来说是 0x80。这是进程将控制转移到内核、进行系统调用的机制。从 Pentium Pro 开始，**sysenter** 指令作为一种更快的系统调用方式而被引入。它依赖于特殊用途的 CPU 寄存器，用于存储内核系统调用处理程序的代码段、入口点和其他细节。当 sysenter 被执行时，CPU 不会进行特权检查，而是立即进入 CPL 0，并将新的值加载到代码寄存器和堆栈寄存器(cs, eip, ss, esp)。只有 ring 0 可以用 sysenter 来设置寄存器，这是在 [enable_sep_cpu()](http://lxr.linux.no/linux+v2.6.25.6/arch/x86/vdso/vdso32-setup.c#L235)中完成的。
 
 最后，当需要返回到 ring 3 时，内核发出 **iret** 或 **sysexit** 指令，分别从中断和系统调用返回，从而退出 ring 0，并恢复 CPL 为 3 的用户代码的执行。Vim 告诉我，我将接近 1900 个单词，所以 I/O 端口保护的事情我隔天再说。我们关于 x86 环和保护的旅程就此结束。感谢你的阅读!
+
+我的翻译感想：
+
+最近在学习 MIT 的一门研究生公开课——[6.828 操作系统](https://pdos.csail.mit.edu/6.828/2018/schedule.html)。关于这篇文章中提到的 IDT，这门课程也提供了很多资料，比如说这个[x86 IDT](https://pdos.csail.mit.edu/6.828/2018/lec/x86_idt.pdf)。我在学习这门课程的过程想要搞懂 CPU 在特权级、保护方面的作用和原理，Intel 的技术手册是一个比较好的材料，但是不够简练，没法让我一下子就明白核心原理，而这篇文章关于这个话题写得还不错，故花了一个下午的时间把它翻译为中文。
+
+总结下来，CPU 提供了一系列如中断、特权检查、分段、分页等功能，以及一些特殊的寄存器，操作系统通过巧妙地利用这些功能和寄存器来对用户态的程序进行隔离。如果想要深入研究这些主题，可以阅读阅读 Intel 的技术手册。
