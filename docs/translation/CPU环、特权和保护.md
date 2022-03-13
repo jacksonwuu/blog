@@ -6,12 +6,12 @@
 
 您可能在直觉上知道，在 Intel x86 计算机上应用程序的能力是有限的，只有操作系统代码才能执行某些任务，但您知道这是什么原理吗？在这篇文章里，我们来看看 x86 **特权级别**（privilege levels），操作系统和 CPU 会协作来形成保护机制，来限制用户态（user-mode）程序的执行。CPU 有 4 个特权级别，从 0 (最高特权)到 3 (最低特权)，主要有 3 种资源被保护:内存、I/O 端口和执行某些机器指令的能力。在某一时刻，x86 CPU 都在特定的特权级别上运行，这决定了哪些代码可以做什么，哪些不能做什么。这些特权级别通常被描述为保护环，最里面的环对应最高特权。大多数现代 x86 内核只使用两个特权级别，0 和 3:
 
-![x86 Protection Rings](http://static.duartes.org/img/blogPosts/x86rings.png)
-x86 Protection Rings
+![x86 Protection Rings](https://i.imgur.com/tWGnZzV.png)
+x86 保护环
 
 在众多机器指令中，大约有 15 条指令被 CPU 限制为 ring 0 权限才能执行。其他许多指令也会对其操作数做限制。如果允许用户模式下运行止血指令，可能会破坏保护机制，引发混乱，所以这些指令保留给内核使用。试图在 ring 0 外运行它们会导致通用保护（general-protection）异常，比如一个程序使用无效内存地址时。同样，对内存和 I/O 端口的访问也会基于特权级别进行限制。但在我们了解保护机制之前，让我们先看看 CPU 是如何跟踪当前的特权级别的，这涉及到之前帖子中的[段选择器（segment selectors）](http://duartes.org/gustavo/blog/post/memory-translation-and-segmentation)。它们是这样的:
 
-![Segment Selectors - Data and Code](http://static.duartes.org/img/blogPosts/segmentSelectorDataAndCode.png)
+![Segment Selectors - Data and Code](https://i.imgur.com/1lG2N15.png)
 数据段选择器和代码段选择器
 
 数据段选择器的所有 16 位内容会被代码直接加载到各种段寄存器中，比如 ss(堆栈段寄存器)和 ds(数据段寄存器)。其中包括被 **Requested Privilege Level (RPL)** 字段，我们将稍微处理它的含义。然而，代码段寄存器(cs)是不可思议的。首先，它的内容不能直接由加载指令(如 mov)设置，而只能由改变程序执行流程的指令(如 call)设置。其次，对我们来说很重要的一点是，cs 不是一个可以通过代码设置的 RPL 字段，而是一个由 CPU 自身维护的 **Current Privilege Level（CPL）** 字段。代码段寄存器中的 2 位 CPL 字段**总是等于** CPU 当前的特权级别。英特尔的文档在这个问题上有点摇摆不定，有时在线文件也会混淆这个问题，但事实如此。在任何时候，无论 CPU 中发生了什么，cs 中的 CPL 字段都会告诉你当前运行代码的特权级别。
@@ -22,8 +22,8 @@ x86 Protection Rings
 
 CPU 在两个关键点上保护内存:当一个段选择器被加载时，以及当一个内存页被一个线性地址访问时。因此，当分段和分页都涉及到时，会内存地址转换来做保护。当一个数据段选择器被加载时，会进行以下检查:
 
-![](http://static.duartes.org/img/blogPosts/segmentProtection.png)
-x86 Segment Protection
+![x86 Segment Protection](https://i.imgur.com/ACaUbEH.png)
+x86 分段保护
 
 由于更高的数字意味着更小的特权，因此上面的 MAX()选择 CPL 和 RPL 中特权最低的，并将其与描述符特权级别(DPL)进行比较。如果 DPL 更高或相等，则允许访问。RPL 背后的想法是允许内核代码使用降低的权限来加载一个段。例如，可以使用 RPL 为 3 来确保用户态代码可以访问该段。堆栈段寄存器 ss 例外，对于它，CPL、RPL 和 DPL 三者必须完全匹配。
 
@@ -33,8 +33,8 @@ x86 Segment Protection
 
 这样就剩下了两个:interrupt-gate 和 trap-gate，它们被用来处理硬件中断(例如，键盘，定时器，磁盘)和异常(例如，页面错误，除零)。我将两者都称为"中断"这些门描述符存储在中断描述符表 **Interrupt Descriptor Table (IDT)** 中。每个中断被分配一个 0 到 255 之间的数字，称为**向量**，当处理器在找应该用哪个 gate 描述符来处理中断时，处理器就是通过把这个数字作为索引到 IDT 中找到该 gate 描述符的。interrupt-gate 和 trap-gate 几乎相同。它们的格式如下所示，以及在中断发生时强制执行的特权检查。为了让这个例子更具体，我还放上了一些 Linux 内核里的变量名。
 
-![](http://static.duartes.org/img/blogPosts/interruptDescriptorWithPrivilegeCheck.png)
-Interrupt Descriptor with Privilege Check
+![Interrupt Descriptor with Privilege Check](https://i.imgur.com/EyHQKPH.png)
+中断描述符及其特权检查
 
 gate 里的 DPL 字段和段选择器都被用来控制访问，而且段选择器加上偏移量（offset）一起确定中断处理程序代码的入口点。内核通常在这些 gate 描述符中为内核代码段使用段选择器。一个中断**永远不能**将控制从高特权的环转移到低特权的环。特权要么保持不变(当内核本身被中断时)，要么提高(当用户模式代码被中断时)。在这两种情况下，得到的 CPL 将等于目标代码段的 DPL;如果 CPL 发生切换时，堆栈也会发生切换。如果一个中断是由代码通过诸如`int n`这样的指令触发的，那么需要额外的一次检查: gate DPL 必须与 CPL 具有相同或更低的权限，这可以防止用户的代码随机触发中断。如果这些检查失败——你猜对了——就会发生一个通用保护（general-protection）异常。所有的 Linux 中断处理程序最终都会在 ring 0 中运行。
 
