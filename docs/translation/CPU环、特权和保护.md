@@ -1,8 +1,10 @@
 # CPU 环、特权和保护
 
-原文标题：CPU Rings, Privilege, and Protection
-原文链接：https://manybutfinite.com/post/cpu-rings-privilege-and-protection/
-原文发布时间：Aug 20th, 2008
+> 原文标题：CPU Rings, Privilege, and Protection
+>
+> 原文链接：https://manybutfinite.com/post/cpu-rings-privilege-and-protection/
+>
+> 原文发布时间：Aug 20th, 2008
 
 您可能在直觉上知道，在 Intel x86 计算机上应用程序的能力是有限的，只有操作系统代码才能执行某些任务，但您知道这是什么原理吗？在这篇文章里，我们来看看 x86 **特权级别**（privilege levels），操作系统和 CPU 会协作来形成保护机制，来限制用户态（user-mode）程序的执行。CPU 有 4 个特权级别，从 0 (最高特权)到 3 (最低特权)，主要有 3 种资源被保护:内存、I/O 端口和执行某些机器指令的能力。在某一时刻，x86 CPU 都在特定的特权级别上运行，这决定了哪些代码可以做什么，哪些不能做什么。这些特权级别通常被描述为保护环，最里面的环对应最高特权。大多数现代 x86 内核只使用两个特权级别，0 和 3:
 
