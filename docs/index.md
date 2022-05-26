@@ -4,7 +4,7 @@
 
 我希望这些文章可以在未来很长的一段时间内还有阅读价值。
 
-感谢[mkdocs](https://github.com/mkdocs/mkdocs)和[mkdocs-material](https://github.com/squidfunk/mkdocs-material)的作者们，本博客基于你们的代码。
+本博客基于[mkdocs](https://github.com/mkdocs/mkdocs)和[mkdocs-material](https://github.com/squidfunk/mkdocs-material)，感谢开发者们。
 
 ## 关注我
 
