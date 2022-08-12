@@ -9,7 +9,6 @@
 ## 关注我
 
 -   [Telegram](https://t.me/yinghexiaozu)
--   [Twitter](https://twitter.com/jacksonwuuu)
 -   [GitHub](https://github.com/jacksonwuu)
 
 ## 推荐阅读
