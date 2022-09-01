@@ -85,6 +85,7 @@ nav:
           - This is the Telegram Way: translation/This-is-the-Telegram-Way.md
           - CPU环、特权和保护: translation/CPU环、特权和保护.md
           - 主板芯片组和内存映射: translation/主板芯片组和内存映射.md
+          - 操作系统如何运行的？: translation/操作系统如何运行的？.md
     - 工具:
           - OneTab: tool/OneTab.md
           - uBlacklist: tool/uBlacklist.md
