@@ -1,7 +1,5 @@
 # Amazing C
 
-A list of C projects that are good for learning C language.
-
 [SQLite](https://www.sqlite.org/index.html): SQLite is a C-language library that implements a small, fast, self-contained, high-reliability, full-featured, SQL database engine.
 
 [Lua](https://www.lua.org/download.html)：Lua is a lightweight, high-level, multi-paradigm programming language designed primarily for embedded use in applications.
