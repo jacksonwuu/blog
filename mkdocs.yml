@@ -79,7 +79,7 @@ nav:
           - 程序员的自我反思: programming/程序员的自我反思.md
           - Web3入门路线: programming/Web3入门路线.md
           - 数据库系统学习笔记: programming/数据库系统学习笔记.md
-          - Amazing C: programming/Amazing-C.md
+          - Amazing C: programming/Amazing C.md
           - 《算法导论》学习笔记: programming/《算法导论》学习笔记.md
 
     - 科技:
@@ -90,11 +90,11 @@ nav:
     - 翻译:
           - 简短地写作: translation/简短地写作.md
           - 少消费多创造才快乐: translation/少消费多创造才快乐.md
-          - This is the Telegram Way: translation/This-is-the-Telegram-Way.md
+          - 这就是Telegram的路线: translation/This-is-the-Telegram-Way.md
           - CPU环、特权和保护: translation/CPU环、特权和保护.md
           - 主板芯片组和内存映射: translation/主板芯片组和内存映射.md
           - 操作系统如何运行的？: translation/操作系统如何运行的？.md
     - 工具:
           - OneTab: tool/OneTab.md
-          - Enhancer for YouTube: tool/Enhancer-for-YouTube.md
+          - Enhancer for YouTube: tool/Enhancer for YouTube.md
     - 关于我: about.md
