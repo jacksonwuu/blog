@@ -75,7 +75,7 @@ nav:
           - 版本号的解读: programming/版本号的解读.md
           - 各大公司的科技博客: programming/各大公司的科技博客.md
           - 《Unix 编程艺术》读书笔记: programming/《Unix 编程艺术》读书笔记.md
-          - 如何 Trouble Shooting: programming/如何TroubleShooting？.md
+          - 如何Trouble Shooting？: programming/如何TroubleShooting？.md
           - 程序员的自我反思: programming/程序员的自我反思.md
           - Web3入门路线: programming/Web3入门路线.md
           - 数据库系统学习笔记: programming/数据库系统学习笔记.md
@@ -90,7 +90,7 @@ nav:
     - 翻译:
           - 简短地写作: translation/简短地写作.md
           - 少消费多创造才快乐: translation/少消费多创造才快乐.md
-          - 这就是Telegram的路线: translation/This-is-the-Telegram-Way.md
+          - 这就是Telegram的路线: translation/这就是Telegram的路线.md
           - CPU环、特权和保护: translation/CPU环、特权和保护.md
           - 主板芯片组和内存映射: translation/主板芯片组和内存映射.md
           - 操作系统如何运行的？: translation/操作系统如何运行的？.md
