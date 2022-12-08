@@ -16,4 +16,6 @@ jobs:
       - run: pip install mkdocs-material
       - run: pip install mkdocs-minify-plugin
       - run: pip install mkdocs-rss-plugin
+      - run: pip install mkdocs-git-revision-date-plugin
+      - run: pip install jieba
       - run: mkdocs gh-deploy --force

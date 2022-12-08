@@ -30,9 +30,15 @@ theme:
         repo: fontawesome/brands/github
 
 plugins:
-    - minify:
+      - search:
+            lang:
+                  - en
+                  - ja
+            separator: '[\s\-\.]+'
+      - git-revision-date
+      - minify:
           minify_html: true
-    - rss:
+      - rss:
 
 extra:
     social:
@@ -90,6 +96,5 @@ nav:
           - 操作系统如何运行的？: translation/操作系统如何运行的？.md
     - 工具:
           - OneTab: tool/OneTab.md
-          - uBlacklist: tool/uBlacklist.md
           - Enhancer for YouTube: tool/Enhancer-for-YouTube.md
     - 关于我: about.md
