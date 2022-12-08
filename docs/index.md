@@ -8,8 +8,3 @@
 
 -   [Telegram 频道](https://t.me/yinghexiaozu)：琐碎的日常。
 -   [GitHub](https://github.com/jacksonwuu)
-
-## 推荐阅读
-
--   [如何学好英语？](./thinking/如何学好英语？.md)
--   [远程办公小思](./thinking/远程办公小思.md)
