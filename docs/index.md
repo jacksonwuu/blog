@@ -6,5 +6,5 @@
 
 ## 关注我
 
--   [Telegram 频道](https://t.me/yinghexiaozu)：会发一些简短的日常所见所思，目前已有 7K+ 订阅。
+-   [Telegram 频道](https://t.me/yinghexiaozu)：会发一些简短的日常所见所思，目前已有 8K+ 订阅。
 -   [GitHub](https://github.com/jacksonwuu)

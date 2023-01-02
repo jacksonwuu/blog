@@ -30,15 +30,15 @@ theme:
         repo: fontawesome/brands/github
 
 plugins:
-      - search:
-            lang:
-                  - en
-                  - ja
-            separator: '[\s\-\.]+'
-      - git-revision-date
-      - minify:
+    - search:
+          lang:
+              - en
+              - ja
+          separator: '[\s\-\.]+'
+    - git-revision-date
+    - minify:
           minify_html: true
-      - rss:
+    - rss:
 
 extra:
     social:
@@ -70,17 +70,18 @@ nav:
           - 乔布斯在斯坦福的演讲: thinking/乔布斯在斯坦福的演讲.md
           - 远程办公小思: thinking/远程办公小思.md
           - 《重来》读书笔记: thinking/《重来》读书笔记.md
-    - 编程:
+    - 技术:
           - 软件架构模式: programming/软件架构模式.md
-          - 版本号的解读: programming/版本号的解读.md
           - 各大公司的科技博客: programming/各大公司的科技博客.md
-          - 《Unix 编程艺术》读书笔记: programming/《Unix 编程艺术》读书笔记.md
           - 如何Trouble Shooting？: programming/如何TroubleShooting？.md
           - 程序员的自我反思: programming/程序员的自我反思.md
           - Web3入门路线: programming/Web3入门路线.md
           - 数据库系统学习笔记: programming/数据库系统学习笔记.md
           - Amazing C: programming/Amazing C.md
+          - 《Unix 编程艺术》读书笔记: programming/《Unix 编程艺术》读书笔记.md
           - 《算法导论》学习笔记: programming/《算法导论》学习笔记.md
+          - 网络协议:
+                - 深入理解TCP（1）——连接管理: programming/network/深入理解TCP（1）——连接管理.md
 
     - 科技:
           - 一只特立独行的鸭: technology/一只特立独行的鸭.md
