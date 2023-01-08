@@ -55,8 +55,8 @@ copyright: Copyright &copy; 2018 - 2022 Jackson Wu
 
 nav:
     - 思考:
-          - 2023世界趋势: thinking/2023世界趋势.md
           - 观点集: thinking/观点集.md
+          - 2023世界趋势: thinking/2023世界趋势.md
           - 推荐书单: thinking/推荐书单.md
           - 博客推荐: thinking/博客推荐.md
           - 一些好建议: thinking/一些好建议.md
@@ -75,6 +75,7 @@ nav:
           - 来一次赛博断舍离: thinking/来一次赛博断舍离.md
           - 社会的开发者: thinking/社会的开发者.md
           - 广度和深度: thinking/广度和深度.md
+          - 创业的小思路: thinking/创业的小思路.md
     - 技术:
           - 软件架构模式: programming/软件架构模式.md
           - 各大公司的科技博客: programming/各大公司的科技博客.md
