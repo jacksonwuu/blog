@@ -70,12 +70,12 @@ nav:
           - 做事前先问问自己几个问题: thinking/做事前先问问自己几个问题.md
           - 乔布斯在斯坦福的演讲: thinking/乔布斯在斯坦福的演讲.md
           - 远程办公小思: thinking/远程办公小思.md
-          - 《重来》读书笔记: thinking/《重来》读书笔记.md
           - 华罗庚读书法: thinking/华罗庚读书法.md
           - 来一次赛博断舍离: thinking/来一次赛博断舍离.md
           - 社会的开发者: thinking/社会的开发者.md
           - 广度和深度: thinking/广度和深度.md
           - 创业的小思路: thinking/创业的小思路.md
+          - 《重来》读书笔记: thinking/《重来》读书笔记.md
     - 技术:
           - 软件架构模式: programming/软件架构模式.md
           - 各大公司的科技博客: programming/各大公司的科技博客.md
@@ -84,9 +84,9 @@ nav:
           - Web3入门路线: programming/Web3入门路线.md
           - 数据库系统学习笔记: programming/数据库系统学习笔记.md
           - Amazing C: programming/Amazing C.md
+          - 图灵奖的几个有趣事实: programming/图灵奖的几个有趣事实.md
           - 《Unix 编程艺术》读书笔记: programming/《Unix 编程艺术》读书笔记.md
           - 《算法导论》学习笔记: programming/《算法导论》学习笔记.md
-          - 图灵奖的几个有趣事实: programming/图灵奖的几个有趣事实.md
           - 网络协议:
                 - 深入理解TCP（1）——连接管理: programming/network/深入理解TCP（1）——连接管理.md
 

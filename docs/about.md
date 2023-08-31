@@ -8,4 +8,7 @@ Hi, I'm Jackson.
 
 我热爱自由！
 
-对了，你可以关注我的[TG 频道](https://t.me/yinghexiaozu)，目前已有 8k+的关注者里，我在那儿更新的频率会高一些，在 TG 上也可以和我互动互动。
+对了，你可以通过一下途径关注我，和我互动。
+
+-   [Telegram 频道](https://t.me/yinghexiaozu)
+-   [Twitter](https://twitter.com/jacksonwuuu)
