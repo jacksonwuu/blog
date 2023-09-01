@@ -55,6 +55,7 @@ copyright: Copyright &copy; 2018 - 2022 Jackson Wu
 
 nav:
     - 思考:
+          - 斯坦福创业课笔记: thinking/斯坦福创业课笔记.md
           - 观点集: thinking/观点集.md
           - 2023世界趋势: thinking/2023世界趋势.md
           - 推荐书单: thinking/推荐书单.md
@@ -64,7 +65,6 @@ nav:
           - 我的写作方法论: thinking/我的写作方法论.md
           - 如何避免被误导？: thinking/如何避免被误导？.md
           - 十条做产品的经验: thinking/十条做产品的经验.md
-          - 斯坦福创业课笔记: thinking/斯坦福创业课笔记.md
           - 针对迷茫的建议: thinking/针对迷茫的建议.md
           - 为什么要做内容输出？: thinking/为什么要做内容输出？.md
           - 做事前先问问自己几个问题: thinking/做事前先问问自己几个问题.md
@@ -77,6 +77,7 @@ nav:
           - 创业的小思路: thinking/创业的小思路.md
           - 《重来》读书笔记: thinking/《重来》读书笔记.md
     - 技术:
+          - 程序员的经验之谈: programming/程序员的经验之谈.md
           - 软件架构模式: programming/软件架构模式.md
           - 各大公司的科技博客: programming/各大公司的科技博客.md
           - 如何Trouble Shooting？: programming/如何TroubleShooting？.md
