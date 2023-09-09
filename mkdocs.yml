@@ -38,7 +38,6 @@ plugins:
     - git-revision-date
     - minify:
           minify_html: true
-    - rss:
 
 extra:
     social:
@@ -90,7 +89,6 @@ nav:
           - 《算法导论》学习笔记: programming/《算法导论》学习笔记.md
           - 网络协议:
                 - 深入理解TCP（1）——连接管理: programming/network/深入理解TCP（1）——连接管理.md
-
     - 科技:
           - 一只特立独行的鸭: technology/一只特立独行的鸭.md
           - 一个左右互搏的例子: technology/一个左右互搏的例子.md
